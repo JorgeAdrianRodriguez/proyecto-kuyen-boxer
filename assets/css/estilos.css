@@ -87,6 +87,7 @@ h1{
     padding: 20px;
     background-color: #D4CAC1;
     margin-top: 20px;
+    height: auto;
 }
 
 h2{
@@ -106,6 +107,9 @@ h2{
     background-position: center;
 
 }
+.nosotros{
+    background-color: #D4CAC1;
+}
 .derecha{
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -116,6 +120,7 @@ h2{
 .derecha h3{
     font-size: 25px;
     margin-bottom: 40px;
+    text-shadow: 1px 1px 3px #1F1E24;
 }
 
 .galeria{
@@ -185,7 +190,110 @@ h2{
     transform: scale(1.8);
     transition: all 0.5s;
 }
+/* ::::::::::::::::::::::::::SECCION NOSOTROS:::::::::::::::::::::::::::::::::::::::::::::: */
+body {
+        margin: 0;
+        font-family: oswald;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #895C3F;
+}
 
+.nos{
+    font-family: oswald;
+    color: #212529;
+    font-size: 27px;
+    text-align: justify;
+    background-color: #D4CAC1;
+    margin: 0;
+    padding: 30px;
+}
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background-size: cover;
+    background-position: top;
+}
+.tit{
+    font-size: 50px;
+    font-weight: bold;
+    color: #1F1E24;
+    text-shadow: 1px 1px 5px #895C3F;
+}
+.desc{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #1F1E24;
+    text-shadow: 1px 1px 5px #895C3F;
+}
+.card-columns .card {
+    display: inline-block;
+    width: 100%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px !important; 
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+.al{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-image: url(../img/istockphoto-903306040-612x612.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+.ar{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-color: #D4CAC1;
+}
+.ar h4{    
+    font-family: Oswald;
+    text-align: center;
+    color: #895C3F;
+    text-shadow: 1px 1px 2px #1F1E24;
+    margin: 28px;
+}
+.ar p{
+    text-align: justify;
+    font-family: Oswald;
+    font-size: 20px;
+}
+
+/* ::::::::::::::::::::::::::SECCION GALERIA::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+    background-color: #D4CAC1;
+    margin: 0px;
+    color: #1F1E24;
+}
+.row{
+    padding: 25px;
+    margin: 0;
+}
+.row img{
+    filter: grayscale(100%);
+}
+.row img:hover{
+    transform: scale(1.1);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
 
 /* ::::::::::::::::::::::::::SECCION SERVICIOS::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -261,7 +369,7 @@ textarea{
     background-color: #d4cac157;
     font-size: 15px;
 }
-/* FIN ///////////// ::::::::::::::::SECCION:::::::::::::::::::: //////////////CONTACTO */
+/*:::::::::::::::::::::::::: FOOTER:::::::::::::::::::::::::::*/
 
 .footer{
     background-color:black;
@@ -796,7 +904,6 @@ width: 380px;
         justify-self: center;
     }
     .bienvenidos p{
-        height: 400px;
         font-size: 25px;
         align-content: center;
     }
@@ -859,7 +966,6 @@ width: 380px;
     }
 
 
-
 /* SECCION SERVICIOS */
 .pelu{
     height: calc(100vh - 190px);
@@ -868,6 +974,7 @@ width: 380px;
     background-position: center;
     display: flex;
 }
+
 .call{
     width: 55%;
     height: 550px;
@@ -986,7 +1093,6 @@ width: 380px;
         font-size: 140px;
     }
     .bienvenidos p{
-        height: 400px;
         font-size: 27px;
     }
     .nosotros{
@@ -1051,8 +1157,7 @@ width: 380px;
 
 
 
-
-/* SECCION SERVICIOS */
+/* ::::::::::::::::::::::::SECCION SERVICIOS ::::::::::::::::::::::::::::::::::::::::::::::::::*/
 .pelu{
     height: calc(100vh - 190px);
     background-image: url(../img/grooming.jpg);
@@ -1060,6 +1165,7 @@ width: 380px;
     background-position: center;
     display: flex;
 }
+
 .call{
     width: auto;
     height: 360px;
