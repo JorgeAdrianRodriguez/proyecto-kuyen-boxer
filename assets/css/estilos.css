@@ -6,6 +6,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.bgnav{
+    background-color: #1F1E24;
+}
+.navbar-nav{
+    font-family: 'Mouse Memoirs';
+    font-size: 30px;
+    color: #D4CAC1;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #D4CAC1;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.navbar-collapse{
+    justify-content: end;
+}
+.nav-link{
+    font-size: 45px;
+}
+.nav-link:hover{
+    color: #895C3F;
+}
 .header{
     height: 190px;
     display: flex;
@@ -16,13 +41,11 @@
     align-items: center;
     background-color: #1F1E24;
 }
-.logo{
-    margin-left: 20px;
+.navbar-brand img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
 }
-.logo:hover{
-    transform: rotate(360deg);
-    transition: 1.2s;
-}
+
 .menuinicio a{
     text-decoration: none;
     list-style: none;
@@ -56,6 +79,7 @@ main{
     height: auto;
     width: 100%;
     background-color: #895C3F;
+    margin-top: -16px;
 }
 h1{
     text-align: center;
@@ -706,6 +730,10 @@ textarea{
 /* FIN ///////////// SECCION //////////////CONTACTO */
 }
 @media only screen and (min-width: 768px) and (max-width:1023px){
+    .nav-link{
+        font-size: 30px;
+        padding: auto;
+    }
     .menuinicio li{
         list-style: none;
         display: inline;
