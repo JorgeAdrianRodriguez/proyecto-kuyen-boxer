@@ -1195,8 +1195,8 @@ width: 380px;
 }
 
 .call{
-    width: auto;
-    height: 360px;
+    /* width: auto; */
+    /* height: auto; */
     color: #D4CAC1;
     border: 2px solid #000;
     background-color: rgba(51, 51, 51, 0.678);
@@ -1204,7 +1204,7 @@ width: 380px;
     font-family: "oswald";
     border-radius: 10px;
     margin-top: 115px; 
-    margin-left: 1000px;
+    margin-left: 900px;
     text-align: justify;
     text-shadow: 1PX 1PX 5PX #000;
 }
@@ -1214,7 +1214,7 @@ width: 380px;
 }
 .descript{
     display: flex;
-    font-size: 35px;
+    font-size: 30px;
 }
 .nuestros h2{
     font-size: 70px;
