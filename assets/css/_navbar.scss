@@ -1,0 +1,38 @@
+.bgnav{
+    background-color: $gris;
+}
+.navbar-nav{
+    font-family: 'Mouse Memoirs';
+    font-size: 30px;
+    color: $blanco;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: $blanco;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.navbar-collapse{
+    justify-content: end;
+}
+.nav-link{
+    font-size: 45px;
+}
+.nav-link:hover{
+    color: $marron;
+}
+.header{
+    height: 190px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Mouse Memoirs';
+    font-size: 30px;
+    justify-self: center;
+    align-items: center;
+    background-color: $gris;
+}
+.navbar-brand img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}

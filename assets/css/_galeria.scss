@@ -1,0 +1,27 @@
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+    background-color: $blanco;
+    margin: 0px;
+    color: $gris;
+}
+.row{
+    padding: 25px;
+    margin: 0;
+    img{
+        filter: grayscale(100%);
+    }
+}
+
+.row img:hover{
+    transform: scale(1.05);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}

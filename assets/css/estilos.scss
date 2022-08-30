@@ -1,0 +1,26 @@
+$marron:#895C3F;
+$gris:#1F1E24;
+$blanco:#D4CAC1;
+
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Oswald:wght@200;300;400;500&display=swap');
+
+@import"_navbar.scss";
+@import"_index.scss";
+@import"_nosotros.scss";
+@import"_galeria.scss";
+@import"_servicios.scss";
+@import"_contacto.scss";
+@import"_footer.scss";
+@import"_mediaQueries.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+

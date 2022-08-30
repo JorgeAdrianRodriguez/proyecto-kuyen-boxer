@@ -1,0 +1,18 @@
+.footer{
+    background-color:black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;    
+    i{
+        letter-spacing: 20px;
+        font-size: 40px;
+        color: $marron;
+        margin-top: 25px;
+    }
+}
+.redes i:hover{
+    transform: scale(1.8);
+    transition: all 0.5s;
+}

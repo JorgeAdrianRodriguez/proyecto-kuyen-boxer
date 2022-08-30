@@ -1,0 +1,145 @@
+main{
+    background-color: $marron;
+}
+
+.bienvenidos{ 
+    h1{
+        height: auto;
+        align-self: center;
+        }
+    p{
+        font-family: 'Oswald', sans-serif;
+        font-size: 22px;
+        text-align: justify;
+        padding: 20px;
+        background-color: $blanco;
+        margin-top: 20px;
+        height: auto;
+        }
+}
+
+.portada{
+    height: auto;
+    width: 100%;
+    background-color: $marron;
+    margin-top: -16px;
+}
+h1{
+    text-align: center;
+    background-color: $marron;
+    color: $blanco;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 65px;
+    text-shadow: 1px 1px 20px #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+h2{
+    text-align: center;
+    background-color: $marron;
+    color: $blanco;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 1px 20px #000;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.nosotros{
+    background-color: $blanco;
+    .izquierda{
+        background-image: url(../img/fondo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .derecha{
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        text-align: justify;
+        padding: 20px;
+        align-self: center;
+            h3{
+            font-size: 25px;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px $gris;
+            }
+    }
+}
+
+.galeria{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $marron;
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    padding-bottom: 400px;
+    
+}
+.item{
+    height: 250px;
+    width: 300px;
+    background-color: #333;
+    border: 2px solid #000;
+    width: 100%;
+    box-shadow: 1px 1px 8px #000;
+}
+.item:hover{
+    transform: scale(1.06);
+    transition: all 0.5s;
+}
+
+.item1{
+    background-image: url(../img/2769911_boxer-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    background-image: url(../img/macho2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item3{
+    background-image: url(../img/luna.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item4{
+    background-image: url(../img/minuture-boxer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item5{
+    background-image: url(../img/lindo-cachorro-tigre-raza-boxer-otono.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item6{
+    background-image: url(../img/blanco.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item7{
+    background-image: url(../img/boxerbaby.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item8{
+    background-image: url(../img/hembra.jpg);
+    background-size: cover;
+    background-position: center;
+}
