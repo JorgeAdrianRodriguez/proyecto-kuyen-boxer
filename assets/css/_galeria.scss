@@ -5,7 +5,9 @@
     margin-right: auto;
     margin-left: auto;
 }
-
+.nos{
+    margin-bottom: 40px;
+}
 .text-center {
     text-align: center;
     background-color: $blanco;
@@ -24,4 +26,35 @@
     transform: scale(1.05);
     transition: all 0.8s;
     filter: grayscale(0%);
+}
+
+.instalaciones{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+@mixin foto ($fondo){
+    background-image: $fondo;
+    background-position: center;
+    background-size: cover;
+    width: 310px;
+    height: 200px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 12px solid $gris;
+    border-radius: 10px;
+}
+.foto1{
+@include foto (url(../img/instalaciones.jpg));
+}
+.foto2{
+@include foto (url(../img/instalaciones_2.jpg));
+}
+.foto3{
+@include foto (url(../img/instalaciones_3.jpg));
+}
+.foto4{
+@include foto (url(../img/instalaciones_4.jpg));
 }

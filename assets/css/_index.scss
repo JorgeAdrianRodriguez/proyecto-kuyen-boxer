@@ -74,7 +74,7 @@ h2{
         align-self: center;
             h3{
             font-size: 25px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             text-shadow: 1px 1px 3px $gris;
             }
     }
@@ -107,39 +107,33 @@ h2{
     background-image: url(../img/2769911_boxer-1.jpg);
     background-size: cover;
     background-position: center;
+    border: 3px solid red;
 }
 .item2{
-    background-image: url(../img/macho2.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend .item1;
+    background-image: url(../img/macho2.jpg);    
 }
 .item3{
-    background-image: url(../img/luna.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend .item1;
+    background-image: url(../img/luna.jpg);    
 }
 .item4{
-    background-image: url(../img/minuture-boxer.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend .item1;
+    background-image: url(../img/minuture-boxer.jpg);    
 }
 .item5{
-    background-image: url(../img/lindo-cachorro-tigre-raza-boxer-otono.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend .item1;
+    background-image: url(../img/lindo-cachorro-tigre-raza-boxer-otono.jpg);    
 }
 .item6{
-    background-image: url(../img/blanco.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend .item1;
+    background-image: url(../img/blanco.jpg);    
 }
 .item7{
-    background-image: url(../img/boxerbaby.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend .item1;
+    background-image: url(../img/boxerbaby.jpg);    
 }
 .item8{
-    background-image: url(../img/hembra.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend .item1;
+    background-image: url(../img/hembra.jpg);    
 }

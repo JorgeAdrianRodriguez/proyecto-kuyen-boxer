@@ -3,16 +3,17 @@
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     text-align: center;
-    color: whitesmoke;
+    color: $blanco;
     padding: 20px;    
-    i{
+    a{
         letter-spacing: 20px;
         font-size: 40px;
         color: $marron;
         margin-top: 25px;
+        text-decoration: none;
     }
 }
-.redes i:hover{
+.redes a:hover{
     transform: scale(1.8);
     transition: all 0.5s;
 }

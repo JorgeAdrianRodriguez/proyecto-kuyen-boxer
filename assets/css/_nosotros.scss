@@ -38,29 +38,34 @@ body {
 }
 
 .container-fluid{
-    .al{
-        margin-top: 150px;
-        margin-bottom: 100px;
-        background-image: url(../img/istockphoto-903306040-612x612.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 450px;
-    }
-    .ar{
-        margin-top: 150px;
-        margin-bottom: 100px;
-        background-color: $blanco;
-            h3{    
-            font-family: Oswald;
-            color: $gris;
-            text-shadow: 1px 1px 2px $gris;
-            margin: 28px;
-            text-align: center;
+    .row{
+        padding: 0px;
+            .al {
+                margin-top: 50px;
+                margin-bottom: 0px;
+                background-image: url(../img/istockphoto-903306040-612x612.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 544px;
             }
-            p{
-                text-align: justify;
-                font-family: Oswald;
-                font-size: 20px;
+            .ar {
+                height: 544px;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                background-color: $blanco;
+                h3 {
+                    font-family: Oswald;
+                    color: $gris;
+                    text-shadow: 1px 1px 2px $gris;
+                    margin: 18px;
+                    text-align: center;
+                }
+                p {
+                    text-align: justify;
+                    font-family: Oswald;
+                    font-size: 18px;
+                    padding: 15px;
+                }
             }
-    }
+    }    
 }

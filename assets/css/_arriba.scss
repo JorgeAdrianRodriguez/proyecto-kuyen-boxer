@@ -1,0 +1,20 @@
+a.subir{
+    height: 50px;
+    width: 50px;
+    background-color: $gris;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    text-align: center;
+    line-height: 40px;
+    color: $blanco;
+    border-radius: 50%; 
+    border: 2px solid $marron;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px $marron;
+        :hover{
+            transform: rotate(360deg);
+            transition: all 0.5s;
+            color: $blanco;
+        }
+}
