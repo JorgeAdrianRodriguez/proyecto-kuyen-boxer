@@ -107,6 +107,7 @@ h2{
     background-image: url(../img/2769911_boxer-1.jpg);
     background-size: cover;
     background-position: center;
+    border: 8px solid rgb(9, 23, 219);
 }
 .item2{
     @extend .item1;
