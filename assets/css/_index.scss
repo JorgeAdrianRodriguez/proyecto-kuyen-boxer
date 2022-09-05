@@ -99,7 +99,7 @@ h2{
     box-shadow: 1px 1px 8px #000;
 }
 .item:hover{
-    transform: scale(1.06);
+    transform: scale(1.05);
     transition: all 0.5s;
 }
 
@@ -107,7 +107,6 @@ h2{
     background-image: url(../img/2769911_boxer-1.jpg);
     background-size: cover;
     background-position: center;
-    border: 8px solid rgb(9, 23, 219);
 }
 .item2{
     @extend .item1;
