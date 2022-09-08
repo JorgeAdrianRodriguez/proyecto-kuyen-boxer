@@ -8,6 +8,9 @@
 }
 .navbar-dark .navbar-nav .nav-link {
     color: $blanco;
+        &:hover{
+            color: $marron;
+        }
 }
 .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 20px;
@@ -18,19 +21,6 @@
 }
 .nav-link{
     font-size: 45px;
-}
-.nav-link:hover{
-    color: $marron;
-}
-.header{
-    height: 190px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Mouse Memoirs';
-    font-size: 30px;
-    justify-self: center;
-    align-items: center;
-    background-color: $gris;
 }
 .navbar-brand img:hover{
     transform: scale(1.2);

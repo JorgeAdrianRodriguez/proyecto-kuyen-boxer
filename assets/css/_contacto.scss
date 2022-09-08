@@ -5,7 +5,6 @@
     font-size: 18px;
     fieldset{
         display: inline;
-        border-radius: 10px;
         border-color: #50413C;
         align-self: center;
         margin-bottom: 200px;
@@ -13,6 +12,9 @@
         background-size: cover;
         height: auto;
         width: 310px;
+        border: 2px solid $gris;
+        border-radius: 25px;
+        box-shadow: 1px 1px 10px $gris;
     }
     form{
         display: flexbox;
@@ -22,17 +24,15 @@
         font-size: 18px;
         textarea{
             border: 2px solid $gris;
-            border-radius: 15px;
+            border-radius: 5px;
             background-color: #d4cac157;
-            font-size: 15px;
             resize: none;
         }        
         input{
             border: 2px solid $gris;
-            height: 40px;
-            border-radius: 10px;
+            height: 35px;
+            border-radius: 5px;
             background-color: $blanco;
-            font-size: 12px;
             :focus{
                 font-size: 27px;
                 color: $marron;
@@ -42,7 +42,6 @@
             }
             ::placeholder{
                 text-align: center;
-                font-size: 12px;
             }
         }
         

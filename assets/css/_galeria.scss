@@ -43,8 +43,13 @@
     height: 200px;
     margin: 15px;
     padding: 10px 10px 20px 20px;
-    border: 12px solid $gris;
+    border: 5px solid $gris;
     border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+        &:hover{
+            transform: scale(1.08);
+            transition: all 1s;
+        }
 }
 .foto1{
 @include foto (url(../img/instalaciones.jpg));

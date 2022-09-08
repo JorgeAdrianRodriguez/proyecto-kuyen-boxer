@@ -1,4 +1,4 @@
-@media only screen and (min-width:320px) and (max-width:479px){
+@media only screen and (min-width:320px) and (max-width:379px){
     .galeria {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 250px);
@@ -21,21 +21,20 @@
         background-position: center;
         display: flex;
         .call{
-            width: 80%;
-            height: 250px;
+            width: 95%;
+            height: 355px;
             color: $blanco;
             border: 2px solid #000;
             background-color: rgba(51, 51, 51, 0.678);
             padding: 10px;
             font-family: "oswald";
-            font-size: 12px;
             border-radius: 10px;
             margin-top: 15px; 
-            margin-left: 55px;
+            margin-left: 10px;
             text-align: justify;
             text-shadow: 1PX 1PX 5PX #000;
             .descript{
-                display: flex;            
+                display: flex;          
             }
         }
     }
@@ -54,8 +53,52 @@
         }
     }
     
+}
+@media only screen and (min-width:380px) and (max-width:479px){
+    /* SECCION SERVICIOS */
+    
+    .pelu{
+        height: calc(100vh - 190px);
+        background-image: url(../img/grooming.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        .call{
+            width: 95%;
+            height: 365px;
+            color: $blanco;
+            border: 2px solid #000;
+            background-color: rgba(51, 51, 51, 0.678);
+            padding: 10px;
+            font-family: "oswald";
+            border-radius: 10px;
+            margin-top: 15px; 
+            margin-left: 10px;
+            text-align: justify;
+            text-shadow: 1PX 1PX 5PX #000;
+            .descript{
+                display: flex;   
+                font-size: 18px;       
+            }
+        }
     }
-    @media only screen and (min-width:480px) and (max-width:599px){
+    
+    .nuestros h2{
+        font-size: 40px;
+    }
+    .clientes{    
+        background-color: $marron;
+        padding: 10px;
+        padding-bottom: 50px;
+        img{
+            border: 2px solid $gris;
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+    
+}
+@media only screen and (min-width:480px) and (max-width:599px){
     
     h1 {
         height: 400px;
@@ -84,21 +127,20 @@
         display: flex;
         .call{
             width: 80%;
-            height: 250px;
+            height: 280px;
             color: $blanco;
             border: 2px solid #000;
             background-color: rgba(51, 51, 51, 0.678);
             padding: 10px;
             font-family: "oswald";
-            font-size: 12px;
             border-radius: 10px;
-            margin-top: 15px; 
+            margin-top: 16px; 
             margin-left: 55px;
             text-align: justify;
             text-shadow: 1PX 1PX 5PX #000;
             .descript{
                 display: flex;
-                font-size: 15px;
+                font-size: 16px;
             }
         }
     }
@@ -127,50 +169,56 @@
         font-family: "oswald";
         color: $gris;
         text-align: center;
-        font-size: 25px;
+        font-size: 18px;
         fieldset{
             display: inline;
-            border-radius: 30px;
             border-color: #50413C;
             align-self: center;
             margin-bottom: 200px;
             background-image: url(../img/fondo.jpg);
             background-size: cover;
             height: auto;
-            width: 400px;
+            width: 410px;
+            border: 2px solid $gris;
+            border-radius: 25px;
+            box-shadow: 1px 1px 10px $gris;
         }
         form{
             display: flexbox;
             justify-content: center;
             justify-self: center;
             text-align: center;
-            font-size: 22px;
+            font-size: 18px;
             textarea{
                 border: 2px solid $gris;
-                border-radius: 15px;
+                border-radius: 5px;
                 background-color: #d4cac157;
-                font-size: 15px;
-            }
+                resize: none;
+            }        
             input{
                 border: 2px solid $gris;
-                height: 40px;
-                width: 160;
-                border-radius: 10px;
+                height: 35px;
+                border-radius: 5px;
                 background-color: $blanco;
-                font-size: 10px;
+                :focus{
+                    font-size: 27px;
+                    color: $marron;
+                    height: 60px;
+                    width: 200px;
+                    transition: 1.2s;
+                }
                 ::placeholder{
                     text-align: center;
-                    font-size: 12px;
                 }
             }
+            
         }
     }
     
     /* FIN ///////////// SECCION //////////////CONTACTO */
     
-    }
-    
-    @media only screen and (min-width:600px) and (max-width:767px){
+}
+@media only screen and (min-width:600px) and (max-width:767px){
     
     h1{
         height: 400px;
@@ -221,7 +269,36 @@
             grid-row: 4/5;
         }
     }
-    
+    // SECCION NOSOTROS
+    @mixin foto ($fondo){
+        background-image: $fondo;
+        background-position: center;
+        background-size: cover;
+        width: 410px;
+        height: 300px;
+        margin: 15px;
+        padding: 10px 10px 20px 20px;
+        border: 5px solid $gris;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #000;
+            &:hover{
+                transform: scale(1.08);
+                transition: all 1s;
+            }
+    }
+    .foto1{
+    @include foto (url(../img/instalaciones.jpg));
+    }
+    .foto2{
+    @include foto (url(../img/instalaciones_2.jpg));
+    }
+    .foto3{
+    @include foto (url(../img/instalaciones_3.jpg));
+    }
+    .foto4{
+    @include foto (url(../img/instalaciones_4.jpg));
+    }
+
     /* SECCION SERVICIOS */
     .pelu{
         height: calc(100vh - 190px);
@@ -231,13 +308,12 @@
         display: flex;
         .call{
             width: 60%;
-            height: 350px;
+            height: 370px;
             color: $blanco;
             border: 2px solid #000;
             background-color: rgba(51, 51, 51, 0.678);
             padding: 10px;
             font-family: "oswald";
-            font-size: 12px;
             border-radius: 10px;
             margin-top: 15px; 
             margin-left: 225px;
@@ -245,13 +321,13 @@
             text-shadow: 1PX 1PX 5PX #000;
             .descript{
                 display: flex;
-                font-size: 16px;
+                font-size: 18px;
             }
         }
     }
     
     .nuestros h2{
-        font-size: 40px;
+        font-size: 50px;
     }
     .clientes{
         display: grid;
@@ -273,50 +349,58 @@
         font-family: "oswald";
         color: $gris;
         text-align: center;
-        font-size: 30px;
+        font-size: 18px;
         fieldset{
             display: inline;
-            border-radius: 30px;
             border-color: #50413C;
             align-self: center;
             margin-bottom: 200px;
             background-image: url(../img/fondo.jpg);
             background-size: cover;
             height: auto;
-            width: 500px;
+            width: 450px;
+            border: 2px solid $gris;
+            border-radius: 25px;
+            box-shadow: 1px 1px 10px $gris;
         }
         form{
             display: flexbox;
             justify-content: center;
             justify-self: center;
             text-align: center;
-            font-size: 25px;
+            font-size: 18px;
             textarea{
                 border: 2px solid $gris;
-                border-radius: 15px;
+                border-radius: 5px;
                 background-color: #d4cac157;
-                font-size: 15px;
-            }
+                width: 300px;
+                resize: none;
+            }        
             input{
                 border: 2px solid $gris;
-                height: 40px;
-                width: 160;
-                border-radius: 10px;
+                height: 35px;
+                border-radius: 5px;
                 background-color: $blanco;
-                font-size: 10px;
+                :focus{
+                    font-size: 27px;
+                    color: $marron;
+                    height: 60px;
+                    width: 200px;
+                    transition: 1.2s;
+                }
                 ::placeholder{
                     text-align: center;
-                    font-size: 12px;
                 }
             }
+            
         }
     }
     
     
     
     /* FIN ///////////// SECCION //////////////CONTACTO */
-    }
-    @media only screen and (min-width: 768px) and (max-width:1023px){
+}
+@media only screen and (min-width: 768px) and (max-width:1023px){
     
     .nav-link{
         font-size: 30px;
@@ -387,7 +471,35 @@
                 grid-row: 7/9;
             } 
     }
-        
+    // SECCION NOSOTROS
+    @mixin foto ($fondo){
+        background-image: $fondo;
+        background-position: center;
+        background-size: cover;
+        width: 410px;
+        height: 300px;
+        margin: 15px;
+        padding: 10px 10px 20px 20px;
+        border: 5px solid $gris;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #000;
+            &:hover{
+                transform: scale(1.08);
+                transition: all 1s;
+            }
+    }
+    .foto1{
+    @include foto (url(../img/instalaciones.jpg));
+    }
+    .foto2{
+    @include foto (url(../img/instalaciones_2.jpg));
+    }
+    .foto3{
+    @include foto (url(../img/instalaciones_3.jpg));
+    }
+    .foto4{
+    @include foto (url(../img/instalaciones_4.jpg));
+    }    
     /* SECCION SERVICIOS */
     .pelu{
         height: calc(100vh - 190px);
@@ -397,7 +509,7 @@
         display: flex;
         .call{
             width: 55%;
-            height: 360px;
+            height: 380px;
             color: $blanco;
             border: 2px solid #000;
             background-color: rgba(51, 51, 51, 0.678);
@@ -410,17 +522,17 @@
             text-shadow: 1PX 1PX 5PX #000;
             .descript{
                 display: flex;
-                font-size: 19px;
+                font-size: 20px;
             }
         }
     }
     
     .nuestros h2{
-        font-size: 40px;
+        font-size: 60px;
     }
     .clientes{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         background-color: $marron;
         padding: 10px;
         padding-bottom: 50px;
@@ -439,51 +551,57 @@
         font-family: "oswald";
         color: $gris;
         text-align: center;
-        font-size: 45px;
+        font-size: 18px;
         fieldset{
             display: inline;
-            border-radius: 30px;
             border-color: #50413C;
             align-self: center;
             margin-bottom: 200px;
             background-image: url(../img/fondo.jpg);
             background-size: cover;
             height: auto;
-            width: 600px;
+            width: 550px;
+            border: 2px solid $gris;
+            border-radius: 25px;
+            box-shadow: 1px 1px 10px $gris;
         }
         form{
             display: flexbox;
             justify-content: center;
             justify-self: center;
             text-align: center;
-            font-size: 35px;
+            font-size: 18px;
             textarea{
-                width: 380px;
                 border: 2px solid $gris;
-                border-radius: 15px;
+                border-radius: 5px;
                 background-color: #d4cac157;
-                font-size: 15px;
-            }
+                width: 400px;
+                resize: none;
+            }        
             input{
                 border: 2px solid $gris;
-                height: 40px;
-                width: 142px;
-                border-radius: 8px;
+                height: 35px;
+                border-radius: 5px;
                 background-color: $blanco;
-                font-size: 10px;
+                :focus{
+                    font-size: 27px;
+                    color: $marron;
+                    height: 60px;
+                    width: 200px;
+                    transition: 1.2s;
+                }
                 ::placeholder{
                     text-align: center;
-                    font-size: 12px;
                 }
             }
+            
         }
     }
     
     /* FIN ///////////// SECCION //////////////CONTACTO */
     
-    }
-    
-    @media only screen and (min-width: 1024px) and (max-width:1199px){
+}
+@media only screen and (min-width: 1024px) and (max-width:1199px){
     
     
     h1{
@@ -561,7 +679,35 @@
                     grid-row: 7/8;
                 }
     }
-    
+    // SECCION NOSOTROS
+    @mixin foto ($fondo){
+        background-image: $fondo;
+        background-position: center;
+        background-size: cover;
+        width: 410px;
+        height: 300px;
+        margin: 15px;
+        padding: 10px 10px 20px 20px;
+        border: 5px solid $gris;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #000;
+            &:hover{
+                transform: scale(1.08);
+                transition: all 1s;
+            }
+    }
+    .foto1{
+    @include foto (url(../img/instalaciones.jpg));
+    }
+    .foto2{
+    @include foto (url(../img/instalaciones_2.jpg));
+    }
+    .foto3{
+    @include foto (url(../img/instalaciones_3.jpg));
+    }
+    .foto4{
+    @include foto (url(../img/instalaciones_4.jpg));
+    }   
     /* SECCION SERVICIOS */
     
     .pelu{
@@ -635,7 +781,7 @@
                 border: 2px solid $gris;
                 border-radius: 15px;
                 background-color: #d4cac157;
-                font-size: 15px;
+                font-size: 18px;
             }
             input{
                 border: 2px solid $gris;
@@ -643,18 +789,17 @@
                 width: 142px;
                 border-radius: 8px;
                 background-color: $blanco;
-                font-size: 10px;
+                font-size: 19px;
                 ::placeholder{
                     text-align: center;
-                    font-size: 12px;
+                    font-size: 20px;
                 }
             }
         }
     }
     /* FIN ///////////// SECCION //////////////CONTACTO */
-    }
-    
-    @media only screen and (min-width: 1200px){
+}
+@media only screen and (min-width: 1200px){
     
     h1 {
         height: 400px;
@@ -741,7 +886,35 @@
             grid-row: 5/7;
         }
     }
-    
+    // SECCION NOSOTROS
+    @mixin foto ($fondo){
+        background-image: $fondo;
+        background-position: center;
+        background-size: cover;
+        width: 600px;
+        height: 400px;
+        margin: 55px;
+        padding: 10px 10px 20px 20px;
+        border: 5px solid $gris;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #000;
+            &:hover{
+                transform: scale(1.08);
+                transition: all 1s;
+            }
+    }
+    .foto1{
+    @include foto (url(../img/instalaciones.jpg));
+    }
+    .foto2{
+    @include foto (url(../img/instalaciones_2.jpg));
+    }
+    .foto3{
+    @include foto (url(../img/instalaciones_3.jpg));
+    }
+    .foto4{
+    @include foto (url(../img/instalaciones_4.jpg));
+    }   
     
     /* ::::::::::::::::::::::::SECCION SERVICIOS ::::::::::::::::::::::::::::::::::::::::::::::::::*/
     
@@ -765,7 +938,7 @@
             text-shadow: 1PX 1PX 5PX #000;
             .descript{
                 display: flex;
-                font-size: 26px;
+                font-size: 25px;
             }
         }
     }
@@ -813,11 +986,11 @@
             text-align: center;
             font-size: 35px;
             textarea{
-                width: 380px;
+                width: 480px;
                 border: 2px solid $gris;
                 border-radius: 15px;
                 background-color: #d4cac157;
-                font-size: 15px;
+                font-size: 20px;
             }
             input{
                 border: 2px solid $gris;
@@ -825,10 +998,10 @@
                 width: 142px;
                 border-radius: 8px;
                 background-color: $blanco;
-                font-size: 10px;
+                font-size: 20px;
                 ::placeholder{
                     text-align: center;
-                    font-size: 12px;
+                    font-size: 25px;
                 }
             }
         }
@@ -836,4 +1009,4 @@
     
     /* FIN ///////////// SECCION //////////////CONTACTO */
     
-    }
+}

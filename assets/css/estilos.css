@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bgnav {
   background-color: #1F1E24;
 }
@@ -18,6 +22,9 @@
 .navbar-dark .navbar-nav .nav-link {
   color: #D4CAC1;
 }
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #895C3F;
+}
 
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 20px;
@@ -30,21 +37,6 @@
 
 .nav-link {
   font-size: 45px;
-}
-
-.nav-link:hover {
-  color: #895C3F;
-}
-
-.header {
-  height: 190px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Mouse Memoirs";
-  font-size: 30px;
-  justify-self: center;
-  align-items: center;
-  background-color: #1F1E24;
 }
 
 .navbar-brand img:hover {
@@ -154,7 +146,7 @@ h2 {
   display: grid;
   grid-gap: 20px;
   padding: 20px;
-  padding-bottom: 400px;
+  padding-bottom: 40px;
 }
 
 .item {
@@ -325,8 +317,13 @@ body {
   height: 200px;
   margin: 15px;
   padding: 10px 10px 20px 20px;
-  border: 12px solid #1F1E24;
+  border: 5px solid #1F1E24;
   border-radius: 10px;
+  box-shadow: 1px 1px 15px #000;
+}
+.foto1:hover {
+  transform: scale(1.08);
+  transition: all 1s;
 }
 
 .foto2 {
@@ -337,8 +334,13 @@ body {
   height: 200px;
   margin: 15px;
   padding: 10px 10px 20px 20px;
-  border: 12px solid #1F1E24;
+  border: 5px solid #1F1E24;
   border-radius: 10px;
+  box-shadow: 1px 1px 15px #000;
+}
+.foto2:hover {
+  transform: scale(1.08);
+  transition: all 1s;
 }
 
 .foto3 {
@@ -349,8 +351,13 @@ body {
   height: 200px;
   margin: 15px;
   padding: 10px 10px 20px 20px;
-  border: 12px solid #1F1E24;
+  border: 5px solid #1F1E24;
   border-radius: 10px;
+  box-shadow: 1px 1px 15px #000;
+}
+.foto3:hover {
+  transform: scale(1.08);
+  transition: all 1s;
 }
 
 .foto4 {
@@ -361,8 +368,13 @@ body {
   height: 200px;
   margin: 15px;
   padding: 10px 10px 20px 20px;
-  border: 12px solid #1F1E24;
+  border: 5px solid #1F1E24;
   border-radius: 10px;
+  box-shadow: 1px 1px 15px #000;
+}
+.foto4:hover {
+  transform: scale(1.08);
+  transition: all 1s;
 }
 
 .pelu {
@@ -380,7 +392,7 @@ body {
   background-color: rgba(51, 51, 51, 0.438);
   padding: 20px;
   font-family: "oswald";
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 10px;
   margin-top: 150px;
   justify-content: center;
@@ -395,7 +407,6 @@ body {
 }
 .formulario fieldset {
   display: inline;
-  border-radius: 10px;
   border-color: #50413C;
   align-self: center;
   margin-bottom: 200px;
@@ -403,6 +414,9 @@ body {
   background-size: cover;
   height: auto;
   width: 310px;
+  border: 2px solid #1F1E24;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px #1F1E24;
 }
 .formulario form {
   display: flexbox;
@@ -413,17 +427,15 @@ body {
 }
 .formulario form textarea {
   border: 2px solid #1F1E24;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: rgba(212, 202, 193, 0.3411764706);
-  font-size: 15px;
   resize: none;
 }
 .formulario form input {
   border: 2px solid #1F1E24;
-  height: 40px;
-  border-radius: 10px;
+  height: 35px;
+  border-radius: 5px;
   background-color: #D4CAC1;
-  font-size: 12px;
 }
 .formulario form input :focus {
   font-size: 27px;
@@ -434,15 +446,12 @@ body {
 }
 .formulario form input ::-moz-placeholder {
   text-align: center;
-  font-size: 12px;
 }
 .formulario form input :-ms-input-placeholder {
   text-align: center;
-  font-size: 12px;
 }
 .formulario form input ::placeholder {
   text-align: center;
-  font-size: 12px;
 }
 
 .footer {
@@ -466,7 +475,7 @@ body {
   transition: all 0.5s;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 379px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 250px);
@@ -486,22 +495,62 @@ body {
     display: flex;
   }
   .pelu .call {
-    width: 80%;
-    height: 250px;
+    width: 95%;
+    height: 355px;
     color: #D4CAC1;
     border: 2px solid #000;
     background-color: rgba(51, 51, 51, 0.678);
     padding: 10px;
     font-family: "oswald";
-    font-size: 12px;
     border-radius: 10px;
     margin-top: 15px;
-    margin-left: 55px;
+    margin-left: 10px;
     text-align: justify;
     text-shadow: 1PX 1PX 5PX #000;
   }
   .pelu .call .descript {
     display: flex;
+  }
+  .nuestros h2 {
+    font-size: 40px;
+  }
+  .clientes {
+    background-color: #895C3F;
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+  .clientes img {
+    border: 2px solid #1F1E24;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 380px) and (max-width: 479px) {
+  /* SECCION SERVICIOS */
+  .pelu {
+    height: calc(100vh - 190px);
+    background-image: url(../img/grooming.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+  }
+  .pelu .call {
+    width: 95%;
+    height: 365px;
+    color: #D4CAC1;
+    border: 2px solid #000;
+    background-color: rgba(51, 51, 51, 0.678);
+    padding: 10px;
+    font-family: "oswald";
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: justify;
+    text-shadow: 1PX 1PX 5PX #000;
+  }
+  .pelu .call .descript {
+    display: flex;
+    font-size: 18px;
   }
   .nuestros h2 {
     font-size: 40px;
@@ -542,22 +591,21 @@ body {
   }
   .pelu .call {
     width: 80%;
-    height: 250px;
+    height: 280px;
     color: #D4CAC1;
     border: 2px solid #000;
     background-color: rgba(51, 51, 51, 0.678);
     padding: 10px;
     font-family: "oswald";
-    font-size: 12px;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-left: 55px;
     text-align: justify;
     text-shadow: 1PX 1PX 5PX #000;
   }
   .pelu .call .descript {
     display: flex;
-    font-size: 15px;
+    font-size: 16px;
   }
   .nuestros h2 {
     font-size: 40px;
@@ -580,51 +628,55 @@ body {
     font-family: "oswald";
     color: #1F1E24;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
   }
   .formulario fieldset {
     display: inline;
-    border-radius: 30px;
     border-color: #50413C;
     align-self: center;
     margin-bottom: 200px;
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     height: auto;
-    width: 400px;
+    width: 410px;
+    border: 2px solid #1F1E24;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #1F1E24;
   }
   .formulario form {
     display: flexbox;
     justify-content: center;
     justify-self: center;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
   }
   .formulario form textarea {
     border: 2px solid #1F1E24;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgba(212, 202, 193, 0.3411764706);
-    font-size: 15px;
+    resize: none;
   }
   .formulario form input {
     border: 2px solid #1F1E24;
-    height: 40px;
-    width: 160;
-    border-radius: 10px;
+    height: 35px;
+    border-radius: 5px;
     background-color: #D4CAC1;
-    font-size: 10px;
+  }
+  .formulario form input :focus {
+    font-size: 27px;
+    color: #895C3F;
+    height: 60px;
+    width: 200px;
+    transition: 1.2s;
   }
   .formulario form input ::-moz-placeholder {
     text-align: center;
-    font-size: 12px;
   }
   .formulario form input :-ms-input-placeholder {
     text-align: center;
-    font-size: 12px;
   }
   .formulario form input ::placeholder {
     text-align: center;
-    font-size: 12px;
   }
   /* FIN ///////////// SECCION //////////////CONTACTO */
 }
@@ -675,6 +727,70 @@ body {
     grid-column: 2/4;
     grid-row: 4/5;
   }
+  .foto1 {
+    background-image: url(../img/instalaciones.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto1:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto2 {
+    background-image: url(../img/instalaciones_2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto2:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto3 {
+    background-image: url(../img/instalaciones_3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto3:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto4 {
+    background-image: url(../img/instalaciones_4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto4:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
   /* SECCION SERVICIOS */
   .pelu {
     height: calc(100vh - 190px);
@@ -685,13 +801,12 @@ body {
   }
   .pelu .call {
     width: 60%;
-    height: 350px;
+    height: 370px;
     color: #D4CAC1;
     border: 2px solid #000;
     background-color: rgba(51, 51, 51, 0.678);
     padding: 10px;
     font-family: "oswald";
-    font-size: 12px;
     border-radius: 10px;
     margin-top: 15px;
     margin-left: 225px;
@@ -700,10 +815,10 @@ body {
   }
   .pelu .call .descript {
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
   }
   .nuestros h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .clientes {
     display: grid;
@@ -723,51 +838,56 @@ body {
     font-family: "oswald";
     color: #1F1E24;
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
   }
   .formulario fieldset {
     display: inline;
-    border-radius: 30px;
     border-color: #50413C;
     align-self: center;
     margin-bottom: 200px;
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     height: auto;
-    width: 500px;
+    width: 450px;
+    border: 2px solid #1F1E24;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #1F1E24;
   }
   .formulario form {
     display: flexbox;
     justify-content: center;
     justify-self: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
   }
   .formulario form textarea {
     border: 2px solid #1F1E24;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgba(212, 202, 193, 0.3411764706);
-    font-size: 15px;
+    width: 300px;
+    resize: none;
   }
   .formulario form input {
     border: 2px solid #1F1E24;
-    height: 40px;
-    width: 160;
-    border-radius: 10px;
+    height: 35px;
+    border-radius: 5px;
     background-color: #D4CAC1;
-    font-size: 10px;
+  }
+  .formulario form input :focus {
+    font-size: 27px;
+    color: #895C3F;
+    height: 60px;
+    width: 200px;
+    transition: 1.2s;
   }
   .formulario form input ::-moz-placeholder {
     text-align: center;
-    font-size: 12px;
   }
   .formulario form input :-ms-input-placeholder {
     text-align: center;
-    font-size: 12px;
   }
   .formulario form input ::placeholder {
     text-align: center;
-    font-size: 12px;
   }
   /* FIN ///////////// SECCION //////////////CONTACTO */
 }
@@ -836,6 +956,70 @@ body {
     grid-column: 3/5;
     grid-row: 7/9;
   }
+  .foto1 {
+    background-image: url(../img/instalaciones.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto1:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto2 {
+    background-image: url(../img/instalaciones_2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto2:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto3 {
+    background-image: url(../img/instalaciones_3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto3:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto4 {
+    background-image: url(../img/instalaciones_4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto4:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
   /* SECCION SERVICIOS */
   .pelu {
     height: calc(100vh - 190px);
@@ -846,7 +1030,7 @@ body {
   }
   .pelu .call {
     width: 55%;
-    height: 360px;
+    height: 380px;
     color: #D4CAC1;
     border: 2px solid #000;
     background-color: rgba(51, 51, 51, 0.678);
@@ -860,14 +1044,14 @@ body {
   }
   .pelu .call .descript {
     display: flex;
-    font-size: 19px;
+    font-size: 20px;
   }
   .nuestros h2 {
-    font-size: 40px;
+    font-size: 60px;
   }
   .clientes {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: #895C3F;
     padding: 10px;
     padding-bottom: 50px;
@@ -883,52 +1067,56 @@ body {
     font-family: "oswald";
     color: #1F1E24;
     text-align: center;
-    font-size: 45px;
+    font-size: 18px;
   }
   .formulario fieldset {
     display: inline;
-    border-radius: 30px;
     border-color: #50413C;
     align-self: center;
     margin-bottom: 200px;
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     height: auto;
-    width: 600px;
+    width: 550px;
+    border: 2px solid #1F1E24;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #1F1E24;
   }
   .formulario form {
     display: flexbox;
     justify-content: center;
     justify-self: center;
     text-align: center;
-    font-size: 35px;
+    font-size: 18px;
   }
   .formulario form textarea {
-    width: 380px;
     border: 2px solid #1F1E24;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgba(212, 202, 193, 0.3411764706);
-    font-size: 15px;
+    width: 400px;
+    resize: none;
   }
   .formulario form input {
     border: 2px solid #1F1E24;
-    height: 40px;
-    width: 142px;
-    border-radius: 8px;
+    height: 35px;
+    border-radius: 5px;
     background-color: #D4CAC1;
-    font-size: 10px;
+  }
+  .formulario form input :focus {
+    font-size: 27px;
+    color: #895C3F;
+    height: 60px;
+    width: 200px;
+    transition: 1.2s;
   }
   .formulario form input ::-moz-placeholder {
     text-align: center;
-    font-size: 12px;
   }
   .formulario form input :-ms-input-placeholder {
     text-align: center;
-    font-size: 12px;
   }
   .formulario form input ::placeholder {
     text-align: center;
-    font-size: 12px;
   }
   /* FIN ///////////// SECCION //////////////CONTACTO */
 }
@@ -1004,6 +1192,70 @@ body {
     grid-column: 4/7;
     grid-row: 7/8;
   }
+  .foto1 {
+    background-image: url(../img/instalaciones.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto1:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto2 {
+    background-image: url(../img/instalaciones_2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto2:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto3 {
+    background-image: url(../img/instalaciones_3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto3:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto4 {
+    background-image: url(../img/instalaciones_4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto4:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
   /* SECCION SERVICIOS */
   .pelu {
     height: calc(100vh - 190px);
@@ -1075,7 +1327,7 @@ body {
     border: 2px solid #1F1E24;
     border-radius: 15px;
     background-color: rgba(212, 202, 193, 0.3411764706);
-    font-size: 15px;
+    font-size: 18px;
   }
   .formulario form input {
     border: 2px solid #1F1E24;
@@ -1083,19 +1335,19 @@ body {
     width: 142px;
     border-radius: 8px;
     background-color: #D4CAC1;
-    font-size: 10px;
+    font-size: 19px;
   }
   .formulario form input ::-moz-placeholder {
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
   }
   .formulario form input :-ms-input-placeholder {
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
   }
   .formulario form input ::placeholder {
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
   }
   /* FIN ///////////// SECCION //////////////CONTACTO */
 }
@@ -1168,6 +1420,70 @@ body {
     grid-column: 4/6;
     grid-row: 5/7;
   }
+  .foto1 {
+    background-image: url(../img/instalaciones.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    margin: 55px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto1:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto2 {
+    background-image: url(../img/instalaciones_2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    margin: 55px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto2:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto3 {
+    background-image: url(../img/instalaciones_3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    margin: 55px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto3:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
+  .foto4 {
+    background-image: url(../img/instalaciones_4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    margin: 55px;
+    padding: 10px 10px 20px 20px;
+    border: 5px solid #1F1E24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+  }
+  .foto4:hover {
+    transform: scale(1.08);
+    transition: all 1s;
+  }
   /* ::::::::::::::::::::::::SECCION SERVICIOS ::::::::::::::::::::::::::::::::::::::::::::::::::*/
   .pelu {
     height: calc(100vh - 190px);
@@ -1191,7 +1507,7 @@ body {
   }
   .pelu .call .descript {
     display: flex;
-    font-size: 26px;
+    font-size: 25px;
   }
   .nuestros h2 {
     font-size: 70px;
@@ -1235,11 +1551,11 @@ body {
     font-size: 35px;
   }
   .formulario form textarea {
-    width: 380px;
+    width: 480px;
     border: 2px solid #1F1E24;
     border-radius: 15px;
     background-color: rgba(212, 202, 193, 0.3411764706);
-    font-size: 15px;
+    font-size: 20px;
   }
   .formulario form input {
     border: 2px solid #1F1E24;
@@ -1247,19 +1563,19 @@ body {
     width: 142px;
     border-radius: 8px;
     background-color: #D4CAC1;
-    font-size: 10px;
+    font-size: 20px;
   }
   .formulario form input ::-moz-placeholder {
     text-align: center;
-    font-size: 12px;
+    font-size: 25px;
   }
   .formulario form input :-ms-input-placeholder {
     text-align: center;
-    font-size: 12px;
+    font-size: 25px;
   }
   .formulario form input ::placeholder {
     text-align: center;
-    font-size: 12px;
+    font-size: 25px;
   }
   /* FIN ///////////// SECCION //////////////CONTACTO */
 }
