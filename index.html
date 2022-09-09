@@ -7,6 +7,7 @@
     <meta name="description" content="Somos un criadero dedicado a la raza de perros Bóxer, con muchos años de experiencia">
     <meta name="keywords" content="criadero, perros boxer, criadero argentino, cachorros, kuyen boxer">
     <title>Kuyén Boxer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/img/kuyenlogolabel.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -56,11 +57,11 @@
             <img class="portada" src="./assets/img/portada.jpg" alt="portada_boxer">
         </div>
     </main>
-    <h2 class="animate__wobble">El Bóxer</h2>
+    <h2 data-aos="zoom-in-down">El Bóxer</h2>
     <section class="nosotros">
-        <div class="izquierda"></div>
-        <div class="derecha">
-            <h3>Acerca de la Raza</h3>
+        <div class="izquierda" data-aos="zoom-in-down" data-aos-delay="500"></div>
+        <div class="derecha" data-aos="fade-right">
+            <h3 >Acerca de la Raza</h3>
             <p> El Boxer es un perro de tamaño mediano, de pelo liso, fuerte, con una estructura corta y cuadrada y
                 huesos fuertes. Su musculatura es seca, fuertemente desarrollada y en relieve. Sus movimientos son
                 vivaces, llenos de fuerza e hidalguía.
@@ -77,7 +78,7 @@
         </div>
     </section>
     <div class="portada2"></div>
-    <h2>Galeria</h2>
+    <h2 data-aos="zoom-in-down">Galeria</h2>
     <div class="galeria">
         <div class="item item1"></div>
         <div class="item item2"></div>
@@ -88,7 +89,7 @@
         <div class="item item7"></div>
         <div class="item item8"></div>
     </div>
-    <footer class="footer">
+    <footer class="footer" data-aos="zoom-in-down">
         <p>Copyright ©  2022 Kuyén Boxer.
             Todos los derechos reservados</p>
         <p>Sitio web desarrollado por:</p>
@@ -106,5 +107,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
